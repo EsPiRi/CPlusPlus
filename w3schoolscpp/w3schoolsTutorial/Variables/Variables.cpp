@@ -1,20 +1,36 @@
-﻿// Variables.cpp : Bu dosya 'main' işlevi içeriyor. Program yürütme orada başlayıp biter.
-//
-
+﻿
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+	int myNum = 15;
+	float myFloatNum = 5.99f;
+	char myLetter = 'a';
+	std::string myText = "hello";
+	bool myBoolean = true;
+
+
+	int myAge = 27;
+	std::cout << "I am " << myAge << " years old." << std::endl;
+
+	int x = 5;
+	int y = 6;
+	int sum = x + y;
+	std::cout << sum << std::endl;
+
+	//declaring many variables in one line
+	int a = 5, b = 6, c = 7;
+	std::cout << a + b + c<<std::endl;
+
+	//declaring constant variables, you have to assign its value after initialization.
+	const int myNum2=20;
+	const int minutesPerHour = 60;
+	const float PI = 3.14;
+	
+	// You can not change const variables after declaring its value;
+	//myNum2 = 15; !!!
+
+	std::cout << myNum << std::endl;
 }
 
-// Programı çalıştır: Ctrl + F5 veya Hata Ayıkla > Hata Ayıklamadan Başlat menüsü
-// Programda hata ayıkla: F5 veya Hata Ayıkla > Hata Ayıklamayı Başlat menüsü
-
-// Kullanmaya Başlama İpuçları: 
-//   1. Dosyaları eklemek/yönetmek için Çözüm Gezgini penceresini kullanın
-//   2. Kaynak denetimine bağlanmak için Takım Gezgini penceresini kullanın
-//   3. Derleme çıktısını ve diğer iletileri görmek için Çıktı penceresini kullanın
-//   4. Hataları görüntülemek için Hata Listesi penceresini kullanın
-//   5. Yeni kod dosyaları oluşturmak için Projeye Git > Yeni Öğe ekle veya varolan kod dosyalarını projeye eklemek için Proje > Var Olan Öğeyi Ekle adımlarını izleyin
-//   6. Bu projeyi daha sonra yeniden açmak için Dosya > Aç > Proje'ye gidip .sln uzantılı dosyayı seçin
